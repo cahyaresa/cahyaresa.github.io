@@ -713,9 +713,53 @@ button:focus {
 
 /** End Testimonial Section 
 ======================================================*/
-/** Start Testimonial Section 
+/** Start Subscription Section 
 ======================================================*/
-/** End Testimonial Section 
+.newslatter_section {
+  color: #ffffff;
+}
+
+.subscription_box {
+  background: url(../img/subscribe-bg.png);
+  padding: 150px 0px;
+}
+.subscription_box .subscribe-form {
+  margin-top: 45px;
+}
+.subscription_box .subscription .primary-btn {
+  margin-left: 10px;
+  background: white;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 5px;
+  min-width: 150px;
+  line-height: 48px;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  padding: 0px 38px;
+  cursor: pointer;
+}
+.subscription_box .subscription input {
+  min-width: 380px;
+  max-height: 380px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  font-weight: 400;
+  color: white;
+  padding: 0px 25px;
+  line-height: 48px;
+}
+.subscription_box h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.subscription_box p {
+  margin-bottom: 0px;
+}
+
+/** End Subscription Section 
 ======================================================*/
 
 /*# sourceMappingURL=styles.css.map */
