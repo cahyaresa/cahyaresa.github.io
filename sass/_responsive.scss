@@ -1,0 +1,93 @@
+/*header section*/
+
+/*Main-menu section*/
+
+@media screen and (max-width: 991px){
+  .header-section{
+    background: #eda942;
+
+    .container {
+      padding: 0 15px 0 15px;
+      .navbar-brand {
+        width: 75%;
+        img {
+          width: inherit;
+          padding: 15px 0 15px 0;
+        }
+      }
+    }
+    .navbar {
+      .search {
+        margin-left: 0px;
+      }
+      .nav {
+        .nav-item {
+          margin-left: 0px;
+          .nav-link {
+            line-height: 40px;
+            margin-right: 0px;
+            display: block;
+            border-bottom: 1px solid #ededed33;
+            border-radius: 0px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+  }
+
+  .navbar-toggler{
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin: 27px 0 23px 0;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #ffffff;
+      margin: auto;
+      margin-bottom: 4px;
+      transition: all 400ms linear;
+      cursor: pointer;
+    }
+  }
+
+  .nav{
+    padding: 0px 0px;
+  }
+
+  .header-section + section,
+  .header-section + row,
+  .header-section + div {
+   margin-top: 117px;
+  }
+
+
+  .navbar-toggler[aria-expanded="false"] span:nth-child(2){
+    opacity: 1;
+  }
+
+  .navbar-toggler[aria-expanded="true"] span:nth-child(2){
+    opacity: 0;
+  }
+
+  .navbar-toggler[aria-expanded="true"] span:first-child{
+    transform: rotate(-45deg);
+    position: relative;
+    top: 7.5px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] span:last-child{
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 6px;
+  }
+
+
+}
+/*end main-menu section*/
+
+/*end header section*/

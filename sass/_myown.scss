@@ -1,0 +1,93 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Resa Cahya
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Medium Layout: 1280px */
+/* Tablet Layout: 768px */
+/* Mobile Layout: 320px */
+/* Wide Mobile Layout: 480px */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+body{
+    line-height: 26px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #274911;
+    background: url(../img/body-gb.png) no-repeat center;
+}
+
+/*header section*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $title-font;
+    font-weight: 500;
+    color: $title-color;
+}
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.p0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.white_bg {
+    background: #fff !important;
+}
+
+// Margin Bottom
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+// Margin Left
+.ml-15 {
+    margin-left: 15px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+// Margin Top
+.mt-50 {
+    margin-top: 50px;
+}

@@ -1,0 +1,84 @@
+/*header section*/
+.header_section {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    background: #ffffff;
+    .menu_nav {
+        width: 100%;
+    }
+    .navbar {
+        background: transparent;
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+        width: 100%;
+        .nav{
+            .nav-item{
+                margin-left: 3em;
+                .nav-link{
+                    font: 500 14px/100px "Rubik", sans-serif;
+                    text-transform: uppercase;
+                    color: black;
+                    padding: 0px;
+                    display: inline-block;
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:hover,
+                &.active {
+                    .nav-link {
+                        color: #8e5c0b;
+                    }
+                }
+            }
+        }
+    }
+    &.navbar_fixed {
+      .main_menu {
+        position: fixed;
+        width: 100%;
+        top: -70px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        transform: translateY(70px);
+        trasition: transform 500ms ease, background 500ms ease;
+        -webkit-transition: transform 500ms ease, background 500ms ease;
+        box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+        .navbar {
+          .nav {
+            .nav-item {
+              .nav-link {
+                line-height: 70px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.white_menu {
+      .navbar {
+        .navbar-brand {
+          @media(min-width: 992px) {
+            &+img {
+              display: none;
+              &+img {
+                display: inline-block;
+              }
+            }
+          }
+          @media (max-width:991px) {
+            img {
+              display: inline-block;
+              &+img {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+/*header css section end*/
