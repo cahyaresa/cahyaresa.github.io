@@ -180,7 +180,7 @@
         @include transition();
 
         &:hover, &.active {
-          color: #d39e00;
+          color: #8e5c0b;
         }
       }
     }
@@ -201,6 +201,10 @@
 
       a {
         color: #000000;
+
+        &:hover {
+          color: #8e5c0b;
+        }
       }
     }
   }
@@ -229,7 +233,7 @@
   }
   &:hover {
     .overlay {
-      background: rgba(77, 87, 222, 0.5);
+      background: rgba(191, 128, 25, 0.5);
     }
     .icon {
       opacity: 1;
@@ -263,7 +267,7 @@
         &.active {
           height: 12px;
           width: 12px;
-          background: $primary-color
+          background: #8e5c0b;
         }
 
       }
@@ -331,3 +335,52 @@
 
 /** End Subscription Section 
 ======================================================*/
+
+/** Start Footer Section 
+======================================================*/
+.footer_section {
+  .container {
+    .row{
+      .footer{
+        &_top {
+
+          h3 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+          }
+          
+          .footer__logo a {
+            background-image: linear-gradient(45deg, #0056b3, #97ceb4);
+            padding: 10px 30px;
+            color: white;
+            line-height: 45px;
+            font-size: 32px;
+            font-weight: 600;
+            border-radius: 8px;
+          }
+
+          .footer_socmed {
+            margin: 10px 0 20px 0;
+            text-align: center;
+            a {
+              color: black;
+              font-size: 18px;
+              padding: 0px 10px 0px 10px;
+
+              &:hover {
+                color:  #8e5c0b;
+              }
+            }
+          }
+        }
+        &_copyright {
+          text-align: center;
+          color: rgba(0, 0, 0, 0.5);
+
+        }
+      }
+    }
+  }
+}

@@ -32,7 +32,7 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #274911;
+  color: #000000;
   background: url(../img/body-gb.png) no-repeat center;
 }
 
@@ -619,7 +619,7 @@ button:focus {
   transition: all 0.4s ease 0s;
 }
 .portofolio_section .filters ul li:hover, .portofolio_section .filters ul li.active {
-  color: #d39e00;
+  color: #8e5c0b;
 }
 
 .portofolio_box {
@@ -636,6 +636,9 @@ button:focus {
 }
 .portofolio_box .short_info h4 a {
   color: #000000;
+}
+.portofolio_box .short_info h4 a:hover {
+  color: #8e5c0b;
 }
 
 .single_portofolio {
@@ -675,7 +678,7 @@ button:focus {
   cursor: pointer;
 }
 .single_portofolio:hover .overlay {
-  background: rgba(77, 87, 222, 0.5);
+  background: rgba(191, 128, 25, 0.5);
 }
 .single_portofolio:hover .icon {
   opacity: 1;
@@ -708,7 +711,7 @@ button:focus {
 .testimonial_section .owl-carousel .owl-dots .owl-dot.active {
   height: 12px;
   width: 12px;
-  background: #4458dc;
+  background: #8e5c0b;
 }
 
 /** End Testimonial Section 
@@ -761,5 +764,38 @@ button:focus {
 
 /** End Subscription Section 
 ======================================================*/
+/** Start Footer Section 
+======================================================*/
+.footer_section .container .row .footer_top h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.footer_section .container .row .footer_top .footer__logo a {
+  background-image: linear-gradient(45deg, #0056b3, #97ceb4);
+  padding: 10px 30px;
+  color: white;
+  line-height: 45px;
+  font-size: 32px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.footer_section .container .row .footer_top .footer_socmed {
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+.footer_section .container .row .footer_top .footer_socmed a {
+  color: black;
+  font-size: 18px;
+  padding: 0px 10px 0px 10px;
+}
+.footer_section .container .row .footer_top .footer_socmed a:hover {
+  color: #8e5c0b;
+}
+.footer_section .container .row .footer_copyright {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
 
 /*# sourceMappingURL=styles.css.map */
