@@ -3,16 +3,16 @@
 /*Main-menu section*/
 
 @media screen and (max-width: 991px){
-  .header-section{
+  .header_section{
     background: #eda942;
 
     .container {
       padding: 0 15px 0 15px;
       .navbar-brand {
-        width: 75%;
+        width: 80%;
+        padding-left: 30px;
         img {
           width: inherit;
-          padding: 15px 0 15px 0;
         }
       }
     }

@@ -4,11 +4,10 @@
 @import "mixins";
 @import "variable";
 // from sass folder
+
+@import "predefine";
 @import "myown";
 @import "header";
-@import "responsive";
 @import "banner";
-@import "predefine";
 @import "home";
-@import "nav-slider";
-
+@import "responsive";

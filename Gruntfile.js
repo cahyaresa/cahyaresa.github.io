@@ -43,12 +43,28 @@ module.exports = function(grunt) {
 		  build: {
 			files: {
 				'combined/combined-vendor.min.js':[
-					'../common/js/_autoload.js',
+                    'vendors/nice-select/js/jquery.nice-select.min.js',
+                    'vendors/isotope/imagesloaded.pkgd.min.js',
+                    'vendors/isotope/isotope-min.js',
+                    'vendors/owl-carousel/owl.carousel.min.js',
+                    'js/jquery.ajaxchimp.min.js',
+                    'js/mail-script.js'
+
 				],
 				
 				'combined/combined-lib.min.js': [
-					'../common/js/_autoload.js',
-				], 
+                    'js/jquery-3.3.1.js',
+                    'js/popper.js',
+                    'js/bootstrap.js',
+                    'js/bootstrap.bundle.js',
+                    'js/stellar.js',
+                    'js/jquery.magnific-popup.min.js',
+
+                ],
+                
+                'combined/combined-custom.min.js' : [
+                    'js/myjs.js'
+                ],
 				
 			}
 		  }

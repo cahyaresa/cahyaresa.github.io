@@ -7,6 +7,108 @@
 /*Color Variables*/
 /*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
+.section_gap {
+  padding: 200px 0;
+}
+@media (max-width: 1199px) {
+  .section_gap {
+    padding: 80px 0;
+  }
+}
+
+.section_gap_bottom {
+  padding-bottom: 200px;
+}
+
+/*Main title Section Css*/
+.main_title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 1199px) {
+  .main_title {
+    margin-bottom: 50px;
+  }
+}
+.main_title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .main_title h2 br {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .main_title h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+.main_title p {
+  margin-bottom: 0px;
+}
+@media (max-width: 991px) {
+  .main_title p br {
+    display: none;
+  }
+}
+
+/*end main title section */
+.primary_btn {
+  display: inline-block;
+  color: #ffffff;
+  letter-spacing: 0px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 46px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(to right, #1ccfe6 0%, #4345E7 100%), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
+  border: double 2px transparent;
+  box-shadow: 0px 10px 30px rgba(118, 85, 255, 0.3);
+}
+.primary_btn:hover {
+  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
+  border: 2px solid #4345E7;
+  color: #222222;
+  box-shadow: none;
+  background-clip: border-box;
+}
+.primary_btn.tr-bg {
+  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
+  border: 2px solid transparent;
+  color: #222222;
+  box-shadow: none;
+}
+.primary_btn.tr-bg:hover {
+  background-image: linear-gradient(to right, #1ccfe6 0%, #4345E7 100%), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
+  border: 2px solid transparent;
+  color: #ffffff;
+  box-shadow: none;
+}
+.primary_btn span {
+  padding: 0 42px;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /*----------------------------------------------------
 @File: Default Styles
 @Author: Resa Cahya
@@ -18,7 +120,6 @@ theme.
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Medium Layout: 1280px */
@@ -138,7 +239,7 @@ button:focus {
   right: 0;
   background: #ffffff;
   transform: translateY(70px);
-  trasition: transform 500ms ease, background 500ms ease;
+  transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 }
@@ -163,86 +264,6 @@ button:focus {
 }
 
 /*header css section end*/
-/*header section*/
-/*Main-menu section*/
-@media screen and (max-width: 991px) {
-  .header-section {
-    background: #eda942;
-  }
-  .header-section .container {
-    padding: 0 15px 0 15px;
-  }
-  .header-section .container .navbar-brand {
-    width: 75%;
-  }
-  .header-section .container .navbar-brand img {
-    width: inherit;
-    padding: 15px 0 15px 0;
-  }
-  .header-section .navbar .search {
-    margin-left: 0px;
-  }
-  .header-section .navbar .nav .nav-item {
-    margin-left: 0px;
-  }
-  .header-section .navbar .nav .nav-item .nav-link {
-    line-height: 40px;
-    margin-right: 0px;
-    display: block;
-    border-bottom: 1px solid #ededed33;
-    border-radius: 0px;
-    color: #ffffff;
-  }
-
-  .navbar-toggler {
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-    margin: 27px 0 23px 0;
-  }
-  .navbar-toggler span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: #ffffff;
-    margin: auto;
-    margin-bottom: 4px;
-    transition: all 400ms linear;
-    cursor: pointer;
-  }
-
-  .nav {
-    padding: 0px 0px;
-  }
-
-  .header-section + section,
-  .header-section + row,
-  .header-section + div {
-    margin-top: 117px;
-  }
-
-  .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
-    opacity: 1;
-  }
-
-  .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar-toggler[aria-expanded="true"] span:first-child {
-    transform: rotate(-45deg);
-    position: relative;
-    top: 7.5px;
-  }
-
-  .navbar-toggler[aria-expanded="true"] span:last-child {
-    transform: rotate(45deg);
-    position: relative;
-    bottom: 6px;
-  }
-}
-/*end main-menu section*/
-/*end header section*/
 /*Home baner section*/
 /*===============================================================*/
 .home_banner_area {
@@ -321,107 +342,6 @@ button:focus {
 }
 .home_banner_area .banner_inner .banner_content .primary_btn {
   margin-right: 20px;
-}
-
-.section_gap {
-  padding: 200px 0;
-}
-@media (max-width: 1199px) {
-  .section_gap {
-    padding: 80px 0;
-  }
-}
-
-.section_gap_bottom {
-  padding-bottom: 200px;
-}
-
-/*Main title Section Css*/
-.main_title {
-  text-align: center;
-  margin-bottom: 100px;
-}
-@media (max-width: 1199px) {
-  .main_title {
-    margin-bottom: 50px;
-  }
-}
-.main_title h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-@media (max-width: 991px) {
-  .main_title h2 br {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .main_title h2 {
-    font-size: 30px;
-    line-height: 34px;
-  }
-}
-.main_title p {
-  margin-bottom: 0px;
-}
-@media (max-width: 991px) {
-  .main_title p br {
-    display: none;
-  }
-}
-
-/*end main title section */
-.primary_btn {
-  display: inline-block;
-  color: #ffffff;
-  letter-spacing: 0px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 46px;
-  outline: none !important;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  background-image: linear-gradient(to right, #1ccfe6 0%, #4345E7 100%), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
-  border: double 2px transparent;
-  box-shadow: 0px 10px 30px rgba(118, 85, 255, 0.3);
-}
-.primary_btn:hover {
-  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
-  border: 2px solid #4345E7;
-  color: #222222;
-  box-shadow: none;
-  background-clip: border-box;
-}
-.primary_btn.tr-bg {
-  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
-  border: 2px solid transparent;
-  color: #222222;
-  box-shadow: none;
-}
-.primary_btn.tr-bg:hover {
-  background-image: linear-gradient(to right, #1ccfe6 0%, #4345E7 100%), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
-  border: 2px solid transparent;
-  color: #ffffff;
-  box-shadow: none;
-}
-.primary_btn span {
-  padding: 0 42px;
-}
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
 }
 
 /* Start About Us Section
@@ -797,5 +717,86 @@ button:focus {
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
 }
+
+/*header section*/
+/*Main-menu section*/
+@media screen and (max-width: 991px) {
+  .header_section {
+    background: #eda942;
+  }
+  .header_section .container {
+    padding: 0 15px 0 15px;
+  }
+  .header_section .container .navbar-brand {
+    width: 80%;
+    padding-left: 30px;
+  }
+  .header_section .container .navbar-brand img {
+    width: inherit;
+  }
+  .header_section .navbar .search {
+    margin-left: 0px;
+  }
+  .header_section .navbar .nav .nav-item {
+    margin-left: 0px;
+  }
+  .header_section .navbar .nav .nav-item .nav-link {
+    line-height: 40px;
+    margin-right: 0px;
+    display: block;
+    border-bottom: 1px solid #ededed33;
+    border-radius: 0px;
+    color: #ffffff;
+  }
+
+  .navbar-toggler {
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin: 27px 0 23px 0;
+  }
+  .navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #ffffff;
+    margin: auto;
+    margin-bottom: 4px;
+    transition: all 400ms linear;
+    cursor: pointer;
+  }
+
+  .nav {
+    padding: 0px 0px;
+  }
+
+  .header-section + section,
+  .header-section + row,
+  .header-section + div {
+    margin-top: 117px;
+  }
+
+  .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
+    opacity: 1;
+  }
+
+  .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggler[aria-expanded="true"] span:first-child {
+    transform: rotate(-45deg);
+    position: relative;
+    top: 7.5px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] span:last-child {
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 6px;
+  }
+}
+/*end main-menu section*/
+/*end header section*/
 
 /*# sourceMappingURL=styles.css.map */
