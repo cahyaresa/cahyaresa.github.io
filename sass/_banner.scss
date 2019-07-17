@@ -9,11 +9,13 @@
   .banner_inner {
     width: 100%;
     .home_right_img {
-      padding-top: 197px;
+      padding-top: 110px;
       @media (max-width: 1480px) {
         img {
-          max-width: 100%;
+          max-width: 200px;
           height: auto;
+          float: right;
+          margin-right: 10vw;
         }
       }
       @media (max-width: 991px) {
@@ -27,7 +29,7 @@
     .banner_content {
       text-align: left;
       @media (max-width: 991px) {
-        margin-top: 150px;
+        margin-top: 110px;
       }
       h3 {
         font-size: 40px;
@@ -52,10 +54,11 @@
         line-height: 30px;
         margin-bottom: 35px;
         @media (max-width: 1024px) {
-          font-size: 60px;
+          margin-bottom: 15px;
         }
         @media (max-width: 767px) {
-          font-size: 50px;
+          font-size: 30px;
+          margin-bottom: 10px;
         }
       }
       h5 {

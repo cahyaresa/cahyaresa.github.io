@@ -73,25 +73,25 @@
   border-radius: 5px;
   background-origin: border-box;
   background-clip: content-box, border-box;
-  background-image: linear-gradient(to right, #1ccfe6 0%, #4345E7 100%), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
+  background-image: linear-gradient(to right, #d6e45e 10%, #eda942 100%), radial-gradient(circle at top left, #d6e45e 10%, #eda942 100%);
   border: double 2px transparent;
-  box-shadow: 0px 10px 30px rgba(118, 85, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(45, 45, 47, 0.28);
 }
 .primary_btn:hover {
-  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
-  border: 2px solid #4345E7;
+  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #d6e45e 10%, #eda942 100%);
+  border: 2px solid #c57a18;
   color: #222222;
   box-shadow: none;
   background-clip: border-box;
 }
 .primary_btn.tr-bg {
-  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
+  background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #d6e45e 10%, #eda942 100%);
   border: 2px solid transparent;
   color: #222222;
   box-shadow: none;
 }
 .primary_btn.tr-bg:hover {
-  background-image: linear-gradient(to right, #1ccfe6 0%, #4345E7 100%), radial-gradient(circle at top left, #1ccfe6 0%, #4345E7 100%);
+  background-image: linear-gradient(to right, #d6e45e 10%, #eda942 100%), radial-gradient(circle at top left, #d6e45e 10%, #eda942 100%);
   border: 2px solid transparent;
   color: #ffffff;
   box-shadow: none;
@@ -278,12 +278,14 @@ button:focus {
   width: 100%;
 }
 .home_banner_area .banner_inner .home_right_img {
-  padding-top: 197px;
+  padding-top: 110px;
 }
 @media (max-width: 1480px) {
   .home_banner_area .banner_inner .home_right_img img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
+    float: right;
+    margin-right: 10vw;
   }
 }
 @media (max-width: 991px) {
@@ -300,7 +302,7 @@ button:focus {
 }
 @media (max-width: 991px) {
   .home_banner_area .banner_inner .banner_content {
-    margin-top: 150px;
+    margin-top: 110px;
   }
 }
 .home_banner_area .banner_inner .banner_content h3 {
@@ -330,12 +332,13 @@ button:focus {
 }
 @media (max-width: 1024px) {
   .home_banner_area .banner_inner .banner_content h1 {
-    font-size: 60px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 767px) {
   .home_banner_area .banner_inner .banner_content h1 {
-    font-size: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
 }
 .home_banner_area .banner_inner .banner_content h5 {
@@ -700,7 +703,7 @@ button:focus {
   margin-top: 30px;
 }
 .footer_section .container .row .footer_top .footer__logo a {
-  background-image: linear-gradient(45deg, #0056b3, #97ceb4);
+  background-image: linear-gradient(to right, #d6e45e 10%, #eda942 100%), radial-gradient(circle at top left, #d6e45e 10%, #eda942 100%);
   padding: 10px 30px;
   color: white;
   line-height: 45px;
@@ -810,6 +813,7 @@ button:focus {
   }
 }
 /*end main-menu section*/
-/*end header section*/
+/*start banner section*/
+/*end banner section*/
 
 /*# sourceMappingURL=styles.css.map */

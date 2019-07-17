@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 991px){
   .header_section{
-    background: #eda942;
+    background:$primary-color;
 
     .container {
       padding: 0 15px 0 15px;
@@ -36,7 +36,7 @@
     }
     &.navbar_fixed {
       .main_menu {
-        background: #eda942;
+        background:$primary-color;
         .navbar {
           .nav {
             .nav-item {
@@ -105,4 +105,6 @@
 }
 /*end main-menu section*/
 
-/*end header section*/
+/*start banner section*/
+
+/*end banner section*/
