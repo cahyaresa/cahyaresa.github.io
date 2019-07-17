@@ -82,7 +82,7 @@
   }
 
   .large {
-    color: #854fee;
+    color: $primary-color;
     font-family: "Rubik", sans-serif;
     font-size: 100px;
     font-weight: 700;
@@ -106,7 +106,7 @@
   margin-bottom: 40px;
 
   p{
-    color: #854fee;
+    color:$primary-color;
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 5px;
