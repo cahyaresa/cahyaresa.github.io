@@ -319,6 +319,10 @@
       color: white;
       padding: 0px 25px;
       line-height: 48px;
+
+      @media screen and (max-width: 767px){
+        min-width: 80%;
+      }
     }
   }
 

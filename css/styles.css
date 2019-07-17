@@ -675,6 +675,11 @@ button:focus {
   padding: 0px 25px;
   line-height: 48px;
 }
+@media screen and (max-width: 767px) {
+  .subscription_box .subscription input {
+    min-width: 80%;
+  }
+}
 .subscription_box h2 {
   text-transform: uppercase;
   font-weight: 700;
