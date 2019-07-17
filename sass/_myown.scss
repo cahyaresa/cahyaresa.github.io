@@ -8,9 +8,6 @@ theme.
 ---------------------------------------------------- */
 /*font Variables*/
 /*Color Variables*/
-/*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
-/*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
@@ -26,6 +23,11 @@ body{
     font-weight: 400;
     color: #000000;
     background: url(../img/body-gb.png) no-repeat center;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 /*header section*/
