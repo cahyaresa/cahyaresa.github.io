@@ -311,7 +311,7 @@ button:focus {
   position: relative;
 }
 .home_banner_area .banner_inner .banner_content h3:after {
-  content: '';
+  content: "";
   width: 410px;
   height: 2px;
   position: absolute;
@@ -368,6 +368,15 @@ button:focus {
   right: 250px;
 }
 @media (max-width: 1480px) {
+  .about_section .about_image {
+    right: 0px;
+  }
+  .about_section .about_image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1481px) {
   .about_section .about_image {
     right: 0px;
   }
@@ -441,7 +450,7 @@ button:focus {
   margin-top: 25px;
 }
 .client_info::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -25px;
   left: -50px;
@@ -787,26 +796,26 @@ button:focus {
   }
 
   .header-section + section,
-  .header-section + row,
-  .header-section + div {
+.header-section + row,
+.header-section + div {
     margin-top: 117px;
   }
 
-  .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
+  .navbar-toggler[aria-expanded=false] span:nth-child(2) {
     opacity: 1;
   }
 
-  .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+  .navbar-toggler[aria-expanded=true] span:nth-child(2) {
     opacity: 0;
   }
 
-  .navbar-toggler[aria-expanded="true"] span:first-child {
+  .navbar-toggler[aria-expanded=true] span:first-child {
     transform: rotate(-45deg);
     position: relative;
     top: 7.5px;
   }
 
-  .navbar-toggler[aria-expanded="true"] span:last-child {
+  .navbar-toggler[aria-expanded=true] span:last-child {
     transform: rotate(45deg);
     position: relative;
     bottom: 6px;

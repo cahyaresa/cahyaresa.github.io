@@ -21,6 +21,14 @@
         height: auto;
       }
     }
+
+    @media (min-width: 1481px) {
+      right: 0px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
