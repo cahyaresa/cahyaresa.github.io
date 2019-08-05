@@ -3,6 +3,6 @@ window.onload = () => {
   
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('./Hello-PWA/sw.js');
+               .register('/Hello-PWA/sw.js');
     }
   }
